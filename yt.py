@@ -17,7 +17,7 @@ def download_song(url, username, password, output_path='downloads'):
         ydl.download([url])
 
 if __name__ == "__main__":
-    url = input("https://youtu.be/yTRHnroQZuM?si=f77Mc9TQ81nZowJc4")
-    username = input("mon31895@gmail.com ")
-    password = input("alosious")
+    url = input("Enter the URL of the song: ")
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
     download_song(url, username, password)
