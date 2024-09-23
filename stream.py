@@ -13,7 +13,7 @@ def send_welcome(message):
 def handle_video(message):
     file_info = bot.get_file(message.video.file_id)
     downloaded_file = bot.download_file(file_info.file_path)
-    src = 'movie.mp4'
+    src = 'movie.mkv'
     with open(src, 'wb') as new_file:
         new_file.write(downloaded_file)
 
