@@ -37,7 +37,7 @@ def ask_for_url(message):
 
 def process_url_step(message):
     try:
-        chat_id = (link unavailable)
+        chat_id =message.chat.id
         url = message.text
         user_data[chat_id] = {'url': url}
         msg = bot.reply_to(message, "Please enter your username:")
@@ -47,7 +47,7 @@ def process_url_step(message):
 
 def process_username_step(message):
     try:
-        chat_id = (link unavailable)
+        chat_id =message.chat.id
         username = message.text
         user_data[chat_id]['username'] = username
         msg = bot.reply_to(message, "Please enter your password:")
@@ -57,7 +57,7 @@ def process_username_step(message):
 
 def process_password_step(message):
     try:
-        chat_id = (link unavailable)
+        chat_id =message.chat.id
         password = message.text
         user_data[chat_id]['password'] = password
         bot.reply_to(message, "Downloading the song, please wait...")
